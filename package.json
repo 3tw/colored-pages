@@ -2,7 +2,7 @@
   "name": "colored-pages",
   "version": "0.1.0",
   "description": "Customizable scss color schemes for the web.",
-  "main": "lib/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "jest",
     "clean": "rimraf lib dist",
