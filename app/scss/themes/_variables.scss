@@ -1,0 +1,31 @@
+/* Default values */
+[color-theme=""] {
+  --theme-color: #fff !default;
+  --theme-color-transparent: #fff;
+}
+
+.preload * {
+  transition: none !important;
+}
+
+/* Color themes */
+[color-theme="theme-green"] {
+  --theme-color: #{$green-theme};
+  --theme-color-transparent: #{$green-theme-transparent};
+}
+[color-theme="theme-orange"] {
+  --theme-color: #{$orange-theme};
+  --theme-color-transparent: #{$orange-theme-transparent};
+}
+[color-theme="theme-bordeaux"] {
+  --theme-color: #{$bordeaux-theme};
+  --theme-color-transparent: #{$bordeaux-theme-transparent};
+}
+[color-theme="theme-blue"] {
+  --theme-color: #{$blue-theme};
+  --theme-color-transparent: #{$blue-theme-transparent};
+}
+[color-theme="theme-tiber"] {
+  --theme-color: #{$tiber-theme};
+  --theme-color-transparent: #{$tiber-theme-transparent};
+}
