@@ -1,15 +1,51 @@
-/* Set CSS theme variables */
+/* CSS theme variables */
 
+// If theme is not set for the page, return variables with value none
 [page-color=""] {
-  --theme-color-primary: #fff;
-  --theme-color-primary-variant: #fff;
-  --theme-color-secondary: #fff;
-  --theme-color-secondary-variant: #fff;
+  --primary: none;
+  --primary-v: none;
+  --secondary: none;
+  --secondary-v: none;
 }
 
 [page-color="theme-01"] {
-  --theme-color-primary: map.get($theme-01, primary);
-  --theme-color-primary-variant: map.get($theme-01, primary-variant);
-  --theme-color-secondary: map.get($theme-01, secondary);
-  --theme-color-secondary-variant: map.get($theme-01, secondary-variant);
+  --primary: #{map-get($theme-01, primary)};
+  --primary-v: #{map-get($theme-01, primary-v)};
+  --secondary: #{map-get($theme-01, secondary)};
+  --secondary-v: #{map-get($theme-01, secondary-v)};
+}
+
+[page-color="theme-02"] {
+  --primary: #{map-get($theme-02, primary)};
+  --primary-v: #{map-get($theme-02, primary-v)};
+  --secondary: #{map-get($theme-02, secondary)};
+  --secondary-v: #{map-get($theme-02, secondary-v)};
+}
+
+[page-color="theme-03"] {
+  --primary: #{map-get($theme-03, primary)};
+  --primary-v: #{map-get($theme-03, primary-v)};
+  --secondary: #{map-get($theme-03, secondary)};
+  --secondary-v: #{map-get($theme-03, secondary-v)};
+}
+
+[page-color="theme-04"] {
+  --primary: #{map-get($theme-04, primary)};
+  --primary-v: #{map-get($theme-04, primary-v)};
+  --secondary: #{map-get($theme-04, secondary)};
+  --secondary-v: #{map-get($theme-04, secondary-v)};
+}
+
+[page-color="theme-05"] {
+  --primary: #{map-get($theme-05, primary)};
+  --primary-v: #{map-get($theme-05, primary-v)};
+  --secondary: #{map-get($theme-05, secondary)};
+  --secondary-v: #{map-get($theme-05, secondary-v)};
+}
+
+[page-color="theme-06"] {
+  --primary: #{map-get($theme-06, primary)};
+  --primary-v: #{map-get($theme-06, primary-v)};
+  --secondary: #{map-get($theme-06, secondary)};
+  --secondary-v: #{map-get($theme-06, secondary-v)};
 }

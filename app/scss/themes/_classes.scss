@@ -1,0 +1,21 @@
+/* Utility classes */
+
+@each $var, $val in $theme-01 {
+  
+  .t-clr--#{$var} {
+    color: var(--#{$var});
+  }
+
+  .t-bg--#{$var} {
+    background-color: var(--#{$var});
+  }
+  
+  .t-stroke--#{$var} {
+    stroke: var(--#{$var});
+  }
+  
+  .t-fill--#{$var} {
+    fill: var(--#{$var});
+  }
+
+}
