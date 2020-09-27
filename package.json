@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "watch": "gulp watch",
     "clean": "rimraf lib dist",
-    "cleanjs": "standardx",
-    "cleanjs-fix": "standardx --fix",
+    "check-js": "standardx",
+    "fix-js": "standardx --fix",
     "build:commonjs": "babel dist --out-dir lib",
     "build": "npm run clean && gulp build && npm run build:commonjs "
   },

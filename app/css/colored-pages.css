@@ -1,0 +1,19 @@
+/* Default theme color values */
+.preload * {
+  transition: none !important; }
+
+body {
+  background-color: #03dac6; }
+
+/* Set CSS theme variables */
+[page-color=""] {
+  --theme-color-primary: #fff;
+  --theme-color-primary-variant: #fff;
+  --theme-color-secondary: #fff;
+  --theme-color-secondary-variant: #fff; }
+
+[page-color="theme-01"] {
+  --theme-color-primary: map.get($theme-01, primary);
+  --theme-color-primary-variant: map.get($theme-01, primary-variant);
+  --theme-color-secondary: map.get($theme-01, secondary);
+  --theme-color-secondary-variant: map.get($theme-01, secondary-variant); }
