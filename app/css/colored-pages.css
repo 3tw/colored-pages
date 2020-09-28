@@ -6,93 +6,93 @@ body {
   margin: 0; }
 
 /* CSS theme variables */
-[page-color=""] {
+[page-colors=""] {
   --primary: none;
   --primary-v: none;
   --secondary: none;
   --secondary-v: none; }
 
-[page-color="theme-01"] {
+[page-colors="theme-01"] {
   --primary: #6200ee;
   --primary-v: #6200eea1;
   --secondary: #03dac6;
   --secondary-v: #03dac6a1; }
 
-[page-color="theme-02"] {
+[page-colors="theme-02"] {
   --primary: #6200ee;
   --primary-v: #6200eea1;
   --secondary: #03dac6;
   --secondary-v: #03dac6a1; }
 
-[page-color="theme-03"] {
+[page-colors="theme-03"] {
   --primary: #6200ee;
   --primary-v: #6200eea1;
   --secondary: #03dac6;
   --secondary-v: #03dac6a1; }
 
-[page-color="theme-04"] {
+[page-colors="theme-04"] {
   --primary: #6200ee;
   --primary-v: #6200eea1;
   --secondary: #03dac6;
   --secondary-v: #03dac6a1; }
 
-[page-color="theme-05"] {
+[page-colors="theme-05"] {
   --primary: #6200ee;
   --primary-v: #6200eea1;
   --secondary: #03dac6;
   --secondary-v: #03dac6a1; }
 
-[page-color="theme-06"] {
+[page-colors="theme-06"] {
   --primary: #6200ee;
   --primary-v: #6200eea1;
   --secondary: #03dac6;
   --secondary-v: #03dac6a1; }
 
 /* Utility classes */
-.t-clr--primary {
+.clp-clr-primary {
   color: var(--primary); }
 
-.t-bg--primary {
+.clp-bg-primary {
   background-color: var(--primary); }
 
-.t-stroke--primary {
+.clp-stroke-primary {
   stroke: var(--primary); }
 
-.t-fill--primary {
+.clp-fill-primary {
   fill: var(--primary); }
 
-.t-clr--primary-v {
+.clp-clr-primary-v {
   color: var(--primary-v); }
 
-.t-bg--primary-v {
+.clp-bg-primary-v {
   background-color: var(--primary-v); }
 
-.t-stroke--primary-v {
+.clp-stroke-primary-v {
   stroke: var(--primary-v); }
 
-.t-fill--primary-v {
+.clp-fill-primary-v {
   fill: var(--primary-v); }
 
-.t-clr--secondary {
+.clp-clr-secondary {
   color: var(--secondary); }
 
-.t-bg--secondary {
+.clp-bg-secondary {
   background-color: var(--secondary); }
 
-.t-stroke--secondary {
+.clp-stroke-secondary {
   stroke: var(--secondary); }
 
-.t-fill--secondary {
+.clp-fill-secondary {
   fill: var(--secondary); }
 
-.t-clr--secondary-v {
+.clp-clr-secondary-v {
   color: var(--secondary-v); }
 
-.t-bg--secondary-v {
+.clp-bg-secondary-v {
   background-color: var(--secondary-v); }
 
-.t-stroke--secondary-v {
+.clp-stroke-secondary-v {
   stroke: var(--secondary-v); }
 
-.t-fill--secondary-v {
+.clp-fill-secondary-v {
   fill: var(--secondary-v); }

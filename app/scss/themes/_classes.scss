@@ -2,19 +2,19 @@
 
 @each $var, $val in $theme-01 {
   
-  .t-clr--#{$var} {
+  .clp-clr-#{$var} {
     color: var(--#{$var});
   }
 
-  .t-bg--#{$var} {
+  .clp-bg-#{$var} {
     background-color: var(--#{$var});
   }
   
-  .t-stroke--#{$var} {
+  .clp-stroke-#{$var} {
     stroke: var(--#{$var});
   }
   
-  .t-fill--#{$var} {
+  .clp-fill-#{$var} {
     fill: var(--#{$var});
   }
 

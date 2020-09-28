@@ -1,8 +1,8 @@
 # Colored Pages
 
-Colored Pages offers easy and flexible use of color themes on your website.
+Colored Pages offers easy and flexible use of color themes on your website via utiliy classes and/or custom SCSS.
 
-(!) *THIS IS WORK IN PROGRESS* (!)
+(WIP)
 
 
 ## Table of Contents
