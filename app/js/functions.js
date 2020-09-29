@@ -38,7 +38,7 @@ function indexColorThemeInidicators (colorThemes, addedClass) {
   for (let i = 0; i < colorThemes.length; i++) {
     const theme = colorThemes[i]
 
-    if (theme === currentTheme) {
+    if (theme.theme === currentTheme) {
       document.querySelectorAll(theme.indicator).forEach((item) => item.classList.add(addedClass))
       break
     }
