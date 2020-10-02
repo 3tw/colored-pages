@@ -1,43 +1,50 @@
 /* Default theme color values */
 
-$theme-01: (
+$clp-theme-01: (
   primary: #6200ee,
   primary-v: #6200eea1,
   secondary: #03dac6,
   secondary-v: #03dac6a1,
 ) !default;
 
-$theme-02: (
+$clp-theme-02: (
   primary: #6200ee,
   primary-v: #6200eea1,
   secondary: #03dac6,
   secondary-v: #03dac6a1,
 ) !default;
 
-$theme-03: (
+$clp-theme-03: (
   primary: #6200ee,
   primary-v: #6200eea1,
   secondary: #03dac6,
   secondary-v: #03dac6a1,
 ) !default;
 
-$theme-04: (
+$clp-theme-04: (
   primary: #6200ee,
   primary-v: #6200eea1,
   secondary: #03dac6,
   secondary-v: #03dac6a1,
 ) !default;
 
-$theme-05: (
+$clp-theme-05: (
   primary: #6200ee,
   primary-v: #6200eea1,
   secondary: #03dac6,
   secondary-v: #03dac6a1,
 ) !default;
 
-$theme-06: (
+$clp-theme-06: (
   primary: #6200ee,
   primary-v: #6200eea1,
   secondary: #03dac6,
   secondary-v: #03dac6a1,
 ) !default;
+
+/* Default transitions */
+
+$clp-transition-clr: color 1.5s ease-in;
+$clp-transition-bg: background-color 1.5s ease-in;
+$clp-transition-stroke: stroke 1.5s ease-in;
+$clp-transition-fill: fill 1.5s ease-in;

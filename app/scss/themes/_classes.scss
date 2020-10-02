@@ -1,21 +1,28 @@
 /* Utility classes */
 
-@each $var, $val in $theme-01 {
+// Create clases by looping through theme map 
+// (any theme can be used, sinc value is not used in the loop)
+
+@each $var, $val in $clp-theme-01 {
   
   .clp-clr-#{$var} {
     color: var(--#{$var});
+    transition: $clp-transition-clr;
   }
 
   .clp-bg-#{$var} {
     background-color: var(--#{$var});
+    transition: $clp-transition-bg;
   }
   
   .clp-stroke-#{$var} {
     stroke: var(--#{$var});
+    transition: $clp-transition-stroke;
   }
   
   .clp-fill-#{$var} {
     fill: var(--#{$var});
+    transition: $clp-transition-fill;
   }
 
 }

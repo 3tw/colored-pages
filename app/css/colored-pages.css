@@ -1,4 +1,3 @@
-/* Default theme color values */
 .preload * {
   transition: none !important;
 }
@@ -7,6 +6,8 @@ body {
   margin: 0;
 }
 
+/* Default theme color values */
+/* Default transitions */
 /* CSS theme variables */
 [page-colors=""] {
   --primary: none;
@@ -60,64 +61,80 @@ body {
 /* Utility classes */
 .clp-clr-primary {
   color: var(--primary);
+  transition: color 1.5s ease-in;
 }
 
 .clp-bg-primary {
   background-color: var(--primary);
+  transition: background-color 1.5s ease-in;
 }
 
 .clp-stroke-primary {
   stroke: var(--primary);
+  transition: stroke 1.5s ease-in;
 }
 
 .clp-fill-primary {
   fill: var(--primary);
+  transition: fill 1.5s ease-in;
 }
 
 .clp-clr-primary-v {
   color: var(--primary-v);
+  transition: color 1.5s ease-in;
 }
 
 .clp-bg-primary-v {
   background-color: var(--primary-v);
+  transition: background-color 1.5s ease-in;
 }
 
 .clp-stroke-primary-v {
   stroke: var(--primary-v);
+  transition: stroke 1.5s ease-in;
 }
 
 .clp-fill-primary-v {
   fill: var(--primary-v);
+  transition: fill 1.5s ease-in;
 }
 
 .clp-clr-secondary {
   color: var(--secondary);
+  transition: color 1.5s ease-in;
 }
 
 .clp-bg-secondary {
   background-color: var(--secondary);
+  transition: background-color 1.5s ease-in;
 }
 
 .clp-stroke-secondary {
   stroke: var(--secondary);
+  transition: stroke 1.5s ease-in;
 }
 
 .clp-fill-secondary {
   fill: var(--secondary);
+  transition: fill 1.5s ease-in;
 }
 
 .clp-clr-secondary-v {
   color: var(--secondary-v);
+  transition: color 1.5s ease-in;
 }
 
 .clp-bg-secondary-v {
   background-color: var(--secondary-v);
+  transition: background-color 1.5s ease-in;
 }
 
 .clp-stroke-secondary-v {
   stroke: var(--secondary-v);
+  transition: stroke 1.5s ease-in;
 }
 
 .clp-fill-secondary-v {
   fill: var(--secondary-v);
+  transition: fill 1.5s ease-in;
 }
