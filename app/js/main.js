@@ -5,8 +5,7 @@ initColorTheme()
 indexColorThemeInidicators(colorThemes, 'clp-current-theme')
 
 /* Toggle color dots box-shadow */
-
-document.querySelectorAll('.clp-indicator').forEach(function (indicator) {
+document.querySelectorAll('.clp-index').forEach(function (indicator) {
   indicator.onmouseenter = function () {
     if (!this.classList.contains('clp-current-theme')) {
       document.querySelectorAll('.clp-current-theme').forEach(function (dot) {
@@ -15,12 +14,14 @@ document.querySelectorAll('.clp-indicator').forEach(function (indicator) {
     }
     this.classList.add('active-theme')
   }
+
   indicator.onmouseleave = function () {
     this.classList.remove('active-theme')
     document.querySelectorAll('.clp-current-theme').forEach(function (dot) {
       dot.classList.remove('clp-disable')
     })
   }
+
   indicator.onclick = function () {
     document.querySelectorAll('.clp-current-theme').forEach(function (dot) {
       dot.classList.remove('clp-current-theme')

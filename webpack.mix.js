@@ -20,4 +20,4 @@ mix
   )
   .copy('app/src/', 'dist/')
   .sass('app/scss/colored-pages.scss', 'app/css')
-  .copy(['app/css/', 'app/scss/scss-demo.scss'], 'dist/')
+  .copy(['app/css/', 'app/scss/demo.scss'], 'dist/')

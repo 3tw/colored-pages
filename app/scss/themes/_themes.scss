@@ -1,49 +1,49 @@
 /* CSS theme variables */
 
 // If theme is not set for the page, return variables with value none
-[page-colors=""] {
+[clp-theme=""] {
   --primary: none;
   --primary-v: none;
   --secondary: none;
   --secondary-v: none;
 }
 
-[page-colors="theme-01"] {
+[clp-theme="clp-theme-01"] {
   --primary: #{map-get($clp-theme-01, primary)};
   --primary-v: #{map-get($clp-theme-01, primary-v)};
   --secondary: #{map-get($clp-theme-01, secondary)};
   --secondary-v: #{map-get($clp-theme-01, secondary-v)};
 }
 
-[page-colors="theme-02"] {
+[clp-theme="clp-theme-02"] {
   --primary: #{map-get($clp-theme-02, primary)};
   --primary-v: #{map-get($clp-theme-02, primary-v)};
   --secondary: #{map-get($clp-theme-02, secondary)};
   --secondary-v: #{map-get($clp-theme-02, secondary-v)};
 }
 
-[page-colors="theme-03"] {
+[clp-theme="clp-theme-03"] {
   --primary: #{map-get($clp-theme-03, primary)};
   --primary-v: #{map-get($clp-theme-03, primary-v)};
   --secondary: #{map-get($clp-theme-03, secondary)};
   --secondary-v: #{map-get($clp-theme-03, secondary-v)};
 }
 
-[page-colors="theme-04"] {
+[clp-theme="clp-theme-04"] {
   --primary: #{map-get($clp-theme-04, primary)};
   --primary-v: #{map-get($clp-theme-04, primary-v)};
   --secondary: #{map-get($clp-theme-04, secondary)};
   --secondary-v: #{map-get($clp-theme-04, secondary-v)};
 }
 
-[page-colors="theme-05"] {
+[clp-theme="clp-theme-05"] {
   --primary: #{map-get($clp-theme-05, primary)};
   --primary-v: #{map-get($clp-theme-05, primary-v)};
   --secondary: #{map-get($clp-theme-05, secondary)};
   --secondary-v: #{map-get($clp-theme-05, secondary-v)};
 }
 
-[page-colors="theme-06"] {
+[clp-theme="clp-theme-06"] {
   --primary: #{map-get($clp-theme-06, primary)};
   --primary-v: #{map-get($clp-theme-06, primary-v)};
   --secondary: #{map-get($clp-theme-06, secondary)};

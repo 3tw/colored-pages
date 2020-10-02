@@ -2,26 +2,30 @@
 
 // List all color themes and relevant items to be indexed
 const colorThemes = [
-  { theme: 'theme-01', indicator: '.clp-indicator-01' },
-  { theme: 'theme-02', indicator: '.clp-indicator-02' },
-  { theme: 'theme-03', indicator: '.clp-indicator-03' },
-  { theme: 'theme-04', indicator: '.clp-indicator-04' },
-  { theme: 'theme-05', indicator: '.clp-indicator-05' },
-  { theme: 'theme-06', indicator: '.clp-indicator-06' }
+  { theme: 'clp-theme-01', indicator: '.clp-index-01' },
+  { theme: 'clp-theme-02', indicator: '.clp-index-02' },
+  { theme: 'clp-theme-03', indicator: '.clp-index-03' },
+  { theme: 'clp-theme-04', indicator: '.clp-index-04' },
+  { theme: 'clp-theme-05', indicator: '.clp-index-05' },
+  { theme: 'clp-theme-06', indicator: '.clp-index-06' }
 ]
 
 /* Check if color theme is set in local storage on page load and set page-color attribute to body */
 
-function initColorTheme (defaultTheme = 'theme-01') {
+function initColorTheme () {
+  const defaultTheme = 'clp-theme-01'
+  console.log(window.localStorage.getItem('clp-color-theme'))
+
   const currentTheme =
-    window.localStorage.getItem('color-theme') !== null ? window.localStorage.getItem('color-theme') : defaultTheme
+    window.localStorage.getItem('clp-color-theme') !== null ? window.localStorage.getItem('clp-color-theme') : defaultTheme
   document.body.setAttribute('clp-theme', currentTheme)
+  console.log(window.localStorage.getItem('clp-color-theme'))
 }
 
 /* Save selected color theme to local storage */
 
 function saveColorTheme (theme) {
-  window.localStorage.setItem('color-theme', theme)
+  window.localStorage.setItem('clp-color-theme', theme)
 }
 
 /* Change clp-theme attribute on body element */
@@ -43,8 +47,8 @@ function setColorTheme (colorThemes, newTheme) {
 
 function indexColorThemeInidicators (colorThemes, addedClass) {
   const currentTheme =
-    window.localStorage.getItem('color-theme') !== null
-      ? window.localStorage.getItem('color-theme')
+    window.localStorage.getItem('clp-color-theme') !== null
+      ? window.localStorage.getItem('clp-color-theme')
       : 'theme is not set'
 
   for (let i = 0; i < colorThemes.length; i++) {
@@ -64,8 +68,7 @@ initColorTheme()
 indexColorThemeInidicators(colorThemes, 'clp-current-theme')
 
 /* Toggle color dots box-shadow */
-
-document.querySelectorAll('.clp-indicator').forEach(function (indicator) {
+document.querySelectorAll('.clp-index').forEach(function (indicator) {
   indicator.onmouseenter = function () {
     if (!this.classList.contains('clp-current-theme')) {
       document.querySelectorAll('.clp-current-theme').forEach(function (dot) {
@@ -74,12 +77,14 @@ document.querySelectorAll('.clp-indicator').forEach(function (indicator) {
     }
     this.classList.add('active-theme')
   }
+
   indicator.onmouseleave = function () {
     this.classList.remove('active-theme')
     document.querySelectorAll('.clp-current-theme').forEach(function (dot) {
       dot.classList.remove('clp-disable')
     })
   }
+
   indicator.onclick = function () {
     document.querySelectorAll('.clp-current-theme').forEach(function (dot) {
       dot.classList.remove('clp-current-theme')

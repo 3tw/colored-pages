@@ -3,26 +3,143 @@
 // Create clases by looping through theme map 
 // (any theme can be used, sinc value is not used in the loop)
 
-@each $var, $val in $clp-theme-01 {
+@each $key, $val in $clp-theme-01 {
   
-  .clp-clr-#{$var} {
-    color: var(--#{$var});
+  .clp-clr-#{$key} {
+    color: var(--#{$key});
     transition: $clp-transition-clr;
   }
 
-  .clp-bg-#{$var} {
-    background-color: var(--#{$var});
+  .clp-bg-#{$key} {
+    background-color: var(--#{$key});
     transition: $clp-transition-bg;
   }
   
-  .clp-stroke-#{$var} {
-    stroke: var(--#{$var});
+  .clp-stroke-#{$key} {
+    stroke: var(--#{$key});
     transition: $clp-transition-stroke;
   }
   
-  .clp-fill-#{$var} {
-    fill: var(--#{$var});
+  .clp-fill-#{$key} {
+    fill: var(--#{$key});
     transition: $clp-transition-fill;
   }
 
 }
+
+/* Expanded class list for each color */
+
+// Theme 01
+@each $key, $val in $clp-theme-01 {
+  .clp-01-clr-#{$key} {
+    color: $val;
+  }
+
+  .clp-01-bg-#{$key} {
+    background-color: $val;
+  }
+  
+  .clp-01-stroke-#{$key} {
+    stroke: $val;
+  }
+  
+  .clp-01-fill-#{$key}{
+    fill: $val;
+  }
+}
+
+// Theme 02
+@each $key, $val in $clp-theme-02 {
+  .clp-02-clr-#{$key} {
+    color: $val;
+  }
+
+  .clp-02-bg-#{$key} {
+    background-color: $val;
+  }
+  
+  .clp-02-stroke-#{$key} {
+    stroke: $val;
+  }
+  
+  .clp-02-fill-#{$key}{
+    fill: $val;
+  }
+}
+
+// Theme 03
+@each $key, $val in $clp-theme-03 {
+  .clp-03-clr-#{$key} {
+    color: $val;
+  }
+
+  .clp-03-bg-#{$key} {
+    background-color: $val;
+  }
+  
+  .clp-03-stroke-#{$key} {
+    stroke: $val;
+  }
+  
+  .clp-03-fill-#{$key}{
+    fill: $val;
+  }
+}
+
+// Theme 04
+@each $key, $val in $clp-theme-04 {
+  .clp-04-clr-#{$key} {
+    color: $val;
+  }
+
+  .clp-04-bg-#{$key} {
+    background-color: $val;
+  }
+  
+  .clp-04-stroke-#{$key} {
+    stroke: $val;
+  }
+  
+  .clp-04-fill-#{$key}{
+    fill: $val;
+  }
+}
+
+// Theme 05
+@each $key, $val in $clp-theme-05 {
+  .clp-05-clr-#{$key} {
+    color: $val;
+  }
+
+  .clp-05-bg-#{$key} {
+    background-color: $val;
+  }
+  
+  .clp-05-stroke-#{$key} {
+    stroke: $val;
+  }
+  
+  .clp-05-fill-#{$key}{
+    fill: $val;
+  }
+}
+
+// Theme 06
+@each $key, $val in $clp-theme-06 {
+  .clp-06-clr-#{$key} {
+    color: $val;
+  }
+
+  .clp-06-bg-#{$key} {
+    background-color: $val;
+  }
+  
+  .clp-06-stroke-#{$key} {
+    stroke: $val;
+  }
+  
+  .clp-06-fill-#{$key}{
+    fill: $val;
+  }
+}
+
