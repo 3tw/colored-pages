@@ -1,0 +1,47 @@
+/* Costum scss - DEMO */
+
+// This is a demo of a custom-scss file that will overide default settings
+// and implement color themes beyond utility class usage
+
+// NOTE: always import costum-scss file before module
+// styles (colored-pages.scss).
+
+/* I. Declare color themes by creating SCSS map */
+
+$clp-theme-01: (primary: #f57f17, primary-v: #fbc02d, secondary: #651fff, secondary-v: #b388ff);
+
+// NOTE: keys must remain the same as in the example above - only values are changable
+// NOTE: you can build up to 6 color themes: they have to be declared as
+// $clp-theme-01, $clp-theme-02, ... $clp-theme-06.
+
+/* II. Customize the transition property */
+
+$clp-transition-clr: color 1.5s ease-in;
+
+// NOTE: sass variables must remain the same as in the example above - only values are changable
+// NOTE: there are 4 transitions to customize: $clp-transition-clr, $clp-transition-bg
+// $clp-transition-stroke and $clp-transition-fill
+
+/* III. Write your own custom SCSS stylesheets */
+
+.header {
+  background-color: var(--primary-v);
+  .header-item {
+    color: #ffffff;
+    &:hover {
+      color: var(--secondary);
+    }
+  }
+}
+
+.logo-svg {
+  .line {
+    stroke: var(--secondary-v);
+  }
+  .inner {
+    fill: var(--secondary-v);
+  }
+}
+
+// NOTE: there are 4 CSS variables that you can use:
+// var(--primary), var(--primary-v), var(--secondary) and var(--secondary-v)
