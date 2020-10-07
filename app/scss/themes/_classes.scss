@@ -5,22 +5,22 @@
 
 @each $key, $val in $clp-theme-01 {
   
-  .clp-clr-#{$key} {
+  .#{$key}-clr {
     color: var(--#{$key});
     transition: $clp-transition-clr;
   }
 
-  .clp-bg-#{$key} {
+  .#{$key}-bg {
     background-color: var(--#{$key});
     transition: $clp-transition-bg;
   }
   
-  .clp-stroke-#{$key} {
+  .#{$key}-stroke {
     stroke: var(--#{$key});
     transition: $clp-transition-stroke;
   }
   
-  .clp-fill-#{$key} {
+  .#{$key}-fill {
     fill: var(--#{$key});
     transition: $clp-transition-fill;
   }
@@ -31,114 +31,114 @@
 
 // Theme 01
 @each $key, $val in $clp-theme-01 {
-  .clp-01-clr-#{$key} {
+  .#{$key}-clr_theme01 {
     color: $val;
   }
 
-  .clp-01-bg-#{$key} {
+  .#{$key}-bg_theme01 {
     background-color: $val;
   }
   
-  .clp-01-stroke-#{$key} {
+  .#{$key}-stroke_theme01  {
     stroke: $val;
   }
   
-  .clp-01-fill-#{$key}{
+  .#{$key}-fill_theme01 {
     fill: $val;
   }
 }
 
 // Theme 02
 @each $key, $val in $clp-theme-02 {
-  .clp-02-clr-#{$key} {
+  .#{$key}-clr_theme02 {
     color: $val;
   }
 
-  .clp-02-bg-#{$key} {
+  .#{$key}-bg_theme02 {
     background-color: $val;
   }
   
-  .clp-02-stroke-#{$key} {
+  .#{$key}-stroke_theme02  {
     stroke: $val;
   }
   
-  .clp-02-fill-#{$key}{
+  .#{$key}-fill_theme02 {
     fill: $val;
   }
 }
 
 // Theme 03
 @each $key, $val in $clp-theme-03 {
-  .clp-03-clr-#{$key} {
+  .#{$key}-clr_theme03 {
     color: $val;
   }
 
-  .clp-03-bg-#{$key} {
+  .#{$key}-bg_theme03 {
     background-color: $val;
   }
   
-  .clp-03-stroke-#{$key} {
+  .#{$key}-stroke_theme03  {
     stroke: $val;
   }
   
-  .clp-03-fill-#{$key}{
+  .#{$key}-fill_theme03 {
     fill: $val;
   }
 }
 
 // Theme 04
 @each $key, $val in $clp-theme-04 {
-  .clp-04-clr-#{$key} {
+  .#{$key}-clr_theme04 {
     color: $val;
   }
 
-  .clp-04-bg-#{$key} {
+  .#{$key}-bg_theme04 {
     background-color: $val;
   }
   
-  .clp-04-stroke-#{$key} {
+  .#{$key}-stroke_theme04  {
     stroke: $val;
   }
   
-  .clp-04-fill-#{$key}{
+  .#{$key}-fill_theme04 {
     fill: $val;
   }
 }
 
 // Theme 05
 @each $key, $val in $clp-theme-05 {
-  .clp-05-clr-#{$key} {
+  .#{$key}-clr_theme05 {
     color: $val;
   }
 
-  .clp-05-bg-#{$key} {
+  .#{$key}-bg_theme05 {
     background-color: $val;
   }
   
-  .clp-05-stroke-#{$key} {
+  .#{$key}-stroke_theme05  {
     stroke: $val;
   }
   
-  .clp-05-fill-#{$key}{
+  .#{$key}-fill_theme05 {
     fill: $val;
   }
 }
 
 // Theme 06
 @each $key, $val in $clp-theme-06 {
-  .clp-06-clr-#{$key} {
+  .#{$key}-clr_theme06 {
     color: $val;
   }
 
-  .clp-06-bg-#{$key} {
+  .#{$key}-bg_theme06 {
     background-color: $val;
   }
   
-  .clp-06-stroke-#{$key} {
+  .#{$key}-stroke_theme06  {
     stroke: $val;
   }
   
-  .clp-06-fill-#{$key}{
+  .#{$key}-fill_theme06 {
     fill: $val;
   }
 }

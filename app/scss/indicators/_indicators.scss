@@ -1,0 +1,10 @@
+.clp-indicators {
+  .clp-index {
+    transition: border-radius 1s ease-in-out, transform .5s ease-in;
+    &.clp-current-theme {
+      transition: border-radius 1s ease-in-out, transform 1s ease-in;
+      transform: rotate(-120deg);
+      border-radius: 0;
+    }
+  }
+}
