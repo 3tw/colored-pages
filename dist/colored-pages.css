@@ -30,19 +30,19 @@
 }
 
 [clp-theme=clp-theme-02] {
-  --clp01: #522e38;
-  --clp02: #b9375e;
-  --clp03: #e05780;
-  --clp04: #ff7aa2;
-  --clp05: #ffe0e9;
+  --clp01: #081c15;
+  --clp02: #2d6a4f;
+  --clp03: #29c376;
+  --clp04: #b7e4c7;
+  --clp05: #d8f3dc;
 }
 
 [clp-theme=clp-theme-03] {
-  --clp01: #081c15;
-  --clp02: #2d6a4f;
-  --clp03: #74c69d;
-  --clp04: #b7e4c7;
-  --clp05: #d8f3dc;
+  --clp01: #522e38;
+  --clp02: #b9375e;
+  --clp03: #f3628e;
+  --clp04: #da7392;
+  --clp05: #ffe0e9;
 }
 
 [clp-theme=clp-theme-04] {
@@ -64,7 +64,7 @@
 [clp-theme=clp-theme-06] {
   --clp01: #ffffff;
   --clp02: #e9ecef;
-  --clp03: #ced4da;
+  --clp03: #848687;
   --clp04: #495057;
   --clp05: #212529;
 }
@@ -252,163 +252,163 @@
 }
 
 .clp01-clr_theme02 {
-  color: #522e38;
-}
-
-.clp01-bg_theme02 {
-  background-color: #522e38;
-}
-
-.clp01-stroke_theme02 {
-  stroke: #522e38;
-}
-
-.clp01-fill_theme02 {
-  fill: #522e38;
-}
-
-.clp02-clr_theme02 {
-  color: #b9375e;
-}
-
-.clp02-bg_theme02 {
-  background-color: #b9375e;
-}
-
-.clp02-stroke_theme02 {
-  stroke: #b9375e;
-}
-
-.clp02-fill_theme02 {
-  fill: #b9375e;
-}
-
-.clp03-clr_theme02 {
-  color: #e05780;
-}
-
-.clp03-bg_theme02 {
-  background-color: #e05780;
-}
-
-.clp03-stroke_theme02 {
-  stroke: #e05780;
-}
-
-.clp03-fill_theme02 {
-  fill: #e05780;
-}
-
-.clp04-clr_theme02 {
-  color: #ff7aa2;
-}
-
-.clp04-bg_theme02 {
-  background-color: #ff7aa2;
-}
-
-.clp04-stroke_theme02 {
-  stroke: #ff7aa2;
-}
-
-.clp04-fill_theme02 {
-  fill: #ff7aa2;
-}
-
-.clp05-clr_theme02 {
-  color: #ffe0e9;
-}
-
-.clp05-bg_theme02 {
-  background-color: #ffe0e9;
-}
-
-.clp05-stroke_theme02 {
-  stroke: #ffe0e9;
-}
-
-.clp05-fill_theme02 {
-  fill: #ffe0e9;
-}
-
-.clp01-clr_theme03 {
   color: #081c15;
 }
 
-.clp01-bg_theme03 {
+.clp01-bg_theme02 {
   background-color: #081c15;
 }
 
-.clp01-stroke_theme03 {
+.clp01-stroke_theme02 {
   stroke: #081c15;
 }
 
-.clp01-fill_theme03 {
+.clp01-fill_theme02 {
   fill: #081c15;
 }
 
-.clp02-clr_theme03 {
+.clp02-clr_theme02 {
   color: #2d6a4f;
 }
 
-.clp02-bg_theme03 {
+.clp02-bg_theme02 {
   background-color: #2d6a4f;
 }
 
-.clp02-stroke_theme03 {
+.clp02-stroke_theme02 {
   stroke: #2d6a4f;
 }
 
-.clp02-fill_theme03 {
+.clp02-fill_theme02 {
   fill: #2d6a4f;
 }
 
-.clp03-clr_theme03 {
-  color: #74c69d;
+.clp03-clr_theme02 {
+  color: #29c376;
 }
 
-.clp03-bg_theme03 {
-  background-color: #74c69d;
+.clp03-bg_theme02 {
+  background-color: #29c376;
 }
 
-.clp03-stroke_theme03 {
-  stroke: #74c69d;
+.clp03-stroke_theme02 {
+  stroke: #29c376;
 }
 
-.clp03-fill_theme03 {
-  fill: #74c69d;
+.clp03-fill_theme02 {
+  fill: #29c376;
 }
 
-.clp04-clr_theme03 {
+.clp04-clr_theme02 {
   color: #b7e4c7;
 }
 
-.clp04-bg_theme03 {
+.clp04-bg_theme02 {
   background-color: #b7e4c7;
 }
 
-.clp04-stroke_theme03 {
+.clp04-stroke_theme02 {
   stroke: #b7e4c7;
 }
 
-.clp04-fill_theme03 {
+.clp04-fill_theme02 {
   fill: #b7e4c7;
 }
 
-.clp05-clr_theme03 {
+.clp05-clr_theme02 {
   color: #d8f3dc;
 }
 
-.clp05-bg_theme03 {
+.clp05-bg_theme02 {
   background-color: #d8f3dc;
 }
 
-.clp05-stroke_theme03 {
+.clp05-stroke_theme02 {
   stroke: #d8f3dc;
 }
 
-.clp05-fill_theme03 {
+.clp05-fill_theme02 {
   fill: #d8f3dc;
+}
+
+.clp01-clr_theme03 {
+  color: #522e38;
+}
+
+.clp01-bg_theme03 {
+  background-color: #522e38;
+}
+
+.clp01-stroke_theme03 {
+  stroke: #522e38;
+}
+
+.clp01-fill_theme03 {
+  fill: #522e38;
+}
+
+.clp02-clr_theme03 {
+  color: #b9375e;
+}
+
+.clp02-bg_theme03 {
+  background-color: #b9375e;
+}
+
+.clp02-stroke_theme03 {
+  stroke: #b9375e;
+}
+
+.clp02-fill_theme03 {
+  fill: #b9375e;
+}
+
+.clp03-clr_theme03 {
+  color: #f3628e;
+}
+
+.clp03-bg_theme03 {
+  background-color: #f3628e;
+}
+
+.clp03-stroke_theme03 {
+  stroke: #f3628e;
+}
+
+.clp03-fill_theme03 {
+  fill: #f3628e;
+}
+
+.clp04-clr_theme03 {
+  color: #da7392;
+}
+
+.clp04-bg_theme03 {
+  background-color: #da7392;
+}
+
+.clp04-stroke_theme03 {
+  stroke: #da7392;
+}
+
+.clp04-fill_theme03 {
+  fill: #da7392;
+}
+
+.clp05-clr_theme03 {
+  color: #ffe0e9;
+}
+
+.clp05-bg_theme03 {
+  background-color: #ffe0e9;
+}
+
+.clp05-stroke_theme03 {
+  stroke: #ffe0e9;
+}
+
+.clp05-fill_theme03 {
+  fill: #ffe0e9;
 }
 
 .clp01-clr_theme04 {
@@ -604,19 +604,19 @@
 }
 
 .clp03-clr_theme06 {
-  color: #ced4da;
+  color: #848687;
 }
 
 .clp03-bg_theme06 {
-  background-color: #ced4da;
+  background-color: #848687;
 }
 
 .clp03-stroke_theme06 {
-  stroke: #ced4da;
+  stroke: #848687;
 }
 
 .clp03-fill_theme06 {
-  fill: #ced4da;
+  fill: #848687;
 }
 
 .clp04-clr_theme06 {
