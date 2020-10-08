@@ -353,4 +353,4 @@ MigrationBackup/
 .DS_Store
 
 # Production
-index.html
+app/index.html

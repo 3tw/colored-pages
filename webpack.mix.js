@@ -18,6 +18,7 @@ mix
     ],
     'app/src/app.js'
   )
+  .sass('app/scss/colored-pages.scss', 'app/css/')
   .copy('app/src/', 'dist/')
-  .sass('app/scss/colored-pages.scss', 'app/css')
   .copy(['app/css/', 'app/scss/demo.scss'], 'dist/')
+  .copy('app/index.html', 'dist/')

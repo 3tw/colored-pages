@@ -22,11 +22,11 @@
 }
 
 [clp-theme=clp-theme-01] {
-  --clp01: #10002b;
-  --clp02: #3c096c;
-  --clp03: #7b2cbf;
-  --clp04: #c77dff;
-  --clp05: #e0aaff;
+  --clp01: #c6493a;
+  --clp02: #edf5e1;
+  --clp03: #5cdb95;
+  --clp04: #907163;
+  --clp05: #111111;
 }
 
 [clp-theme=clp-theme-02] {
@@ -172,83 +172,83 @@
 
 /* Expanded class list for each color */
 .clp01-clr_theme01 {
-  color: #10002b;
+  color: #c6493a;
 }
 
 .clp01-bg_theme01 {
-  background-color: #10002b;
+  background-color: #c6493a;
 }
 
 .clp01-stroke_theme01 {
-  stroke: #10002b;
+  stroke: #c6493a;
 }
 
 .clp01-fill_theme01 {
-  fill: #10002b;
+  fill: #c6493a;
 }
 
 .clp02-clr_theme01 {
-  color: #3c096c;
+  color: #edf5e1;
 }
 
 .clp02-bg_theme01 {
-  background-color: #3c096c;
+  background-color: #edf5e1;
 }
 
 .clp02-stroke_theme01 {
-  stroke: #3c096c;
+  stroke: #edf5e1;
 }
 
 .clp02-fill_theme01 {
-  fill: #3c096c;
+  fill: #edf5e1;
 }
 
 .clp03-clr_theme01 {
-  color: #7b2cbf;
+  color: #5cdb95;
 }
 
 .clp03-bg_theme01 {
-  background-color: #7b2cbf;
+  background-color: #5cdb95;
 }
 
 .clp03-stroke_theme01 {
-  stroke: #7b2cbf;
+  stroke: #5cdb95;
 }
 
 .clp03-fill_theme01 {
-  fill: #7b2cbf;
+  fill: #5cdb95;
 }
 
 .clp04-clr_theme01 {
-  color: #c77dff;
+  color: #907163;
 }
 
 .clp04-bg_theme01 {
-  background-color: #c77dff;
+  background-color: #907163;
 }
 
 .clp04-stroke_theme01 {
-  stroke: #c77dff;
+  stroke: #907163;
 }
 
 .clp04-fill_theme01 {
-  fill: #c77dff;
+  fill: #907163;
 }
 
 .clp05-clr_theme01 {
-  color: #e0aaff;
+  color: #111111;
 }
 
 .clp05-bg_theme01 {
-  background-color: #e0aaff;
+  background-color: #111111;
 }
 
 .clp05-stroke_theme01 {
-  stroke: #e0aaff;
+  stroke: #111111;
 }
 
 .clp05-fill_theme01 {
-  fill: #e0aaff;
+  fill: #111111;
 }
 
 .clp01-clr_theme02 {
