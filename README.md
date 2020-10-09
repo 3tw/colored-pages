@@ -4,6 +4,7 @@ Colored Pages offers easy and flexible use of color themes on your website with 
 
 (WIP)
 
+DEMO
 
 ## Table of Contents
 * [Installation](#installation)  
@@ -12,6 +13,9 @@ Colored Pages offers easy and flexible use of color themes on your website with 
 * [Utility Classes](#utility-classes)
 * [License](#license)  
 
+## DEMO
+
+[Colored Pages](https://3tw.github.io/colored-pages/)
 
 ## Installation
 
