@@ -4,16 +4,15 @@ Colored Pages offers easy and flexible use of color themes on your website with 
 
 (WIP)
 
-DEMO
-
 ## Table of Contents
+* [Demo](#demo)  
 * [Installation](#installation)  
 * [Usage](#usage)  
 * [Variables](#variables)  
 * [Utility Classes](#utility-classes)
 * [License](#license)  
 
-## DEMO
+## Demo
 
 [Colored Pages](https://3tw.github.io/colored-pages/)
 
