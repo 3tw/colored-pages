@@ -9,7 +9,7 @@ Colored Pages offers easy and flexible use of color themes on your website with 
 * [Installation](#installation)  
 * [Usage](#usage)  
 * [Variables](#variables)  
-* [Classes](#classes)
+* [Utility Classes](#utility-classes)
 * [License](#license)  
 
 
@@ -94,7 +94,10 @@ a) first part picks the color according to its key in the map
 ```
 b) while the second part determines which CSS property will be affected
 ```css
-...-clr
+...-clr      // Color
+...-bg       // Background
+...-stroke   // Stroke
+...-fill     // Fill
 ```
 
 For example, to specify color of the text with the first color value and background of the element with the third, you would write down
