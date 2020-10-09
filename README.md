@@ -6,11 +6,11 @@ Colored Pages offers easy and flexible use of color themes on your website with 
 
 
 ## Table of Contents
-* [Installation](##installation)  
-* [Usage](##usage)  
-* [Variables](##variables)  
-* [Classes](##classes)
-* [License](##license)  
+* [Installation](#installation)  
+* [Usage](#usage)  
+* [Variables](#variables)  
+* [Classes](#classes)
+* [License](#license)  
 
 
 ## Installation
@@ -39,7 +39,7 @@ You can determine which color theme is used on a webpage or let user switch betw
 
 TL;DR
 
-Just define [scss variables](###scss-varaibles) for color themes and color your webpage with [utility classes](##utility-classes) listed below. If you need something more complex write your own stylesheets and include [css variables](###css-variables).
+Just define [scss variables](#scss-varaibles) for color themes and color your webpage with [utility classes](#utility-classes) listed below. If you need something more complex write your own stylesheets and include [css variables](#css-variables).
 
 #### I. Declare color theme(s) variables
 
@@ -104,7 +104,7 @@ For example, to specify color of the text with the first color value and backgro
 </p>
 ```
 
-[Below](##utility-classes) you can find an extensive list of utility classes used by this version of Colored Pages.
+[Below](#utility-classes) you can find an extensive list of utility classes used by this version of Colored Pages.
 
 ++ When assigning values to color themes keep in mind that certain combinations of colors might not  work while others do. More often than not you will find yourself using certain keys for dark or bold colors, while reserving others for light shades.
 
