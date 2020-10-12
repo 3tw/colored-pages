@@ -23,13 +23,22 @@ Colored Pages offers easy and flexible use of color themes on your website with 
 npm install colored-pages
 ```
 
+Import css
+```js
+@import "~colored-pages";
+```
+
 #### GitHub
 Clone this repository and include js and scss files to your projects
 ```bash
 dist/app.js
-dist/colored-pages.scss
+dist/colored-pages.css
 ```
-Make sure to import colored-pages.scss before your custom scss in order to override the defaults.
+Make sure to include colored-pages before your custom scss in order to override the defaults.
+```html
+<link href="path/to/colored-pages.css" rel="stylesheet">
+<link href="path/to/your-custom-themes.scss" rel="stylesheet">
+```
 
 ## About
 Colored Pages come with six predefined color themes, each containing five different colors.
