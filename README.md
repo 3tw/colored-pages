@@ -32,7 +32,7 @@ dist/colored-pages.scss
 Make sure to import colored-pages.scss before your custom scss in order to override the defaults.
 
 ## About
-Colored Pages come with six predefined color themes, each containing five different colors. You can use all six of them or perhaps just one if your thinking about expanding later.
+Colored Pages come with six predefined color themes, each containing five different colors.
 
 You can determine which color theme is used on a webpage or let user switch between them and let Colored Pages do the work.
 
@@ -48,7 +48,7 @@ Just define [scss variables](#scss-varaibles) for color themes and color your we
 
 Start by defining a scss map of a color theme. Each color theme has its own default values. You can override them by declaring up to 6 maps.
 
-```css
+```scss
 $clp-theme-01: (
   clp01: #c6493a,
   clp02: #edf5e1,
@@ -68,7 +68,7 @@ The keys (*clp01*, *clp02*, ... *clp05*) must remain the same too.
 
 There are four transitions for you to customise that control the color change on specific CSS properties.
 
-```css
+```scss
 $clp-transition-clr      // Color
 $clp-transition-bg       // Background
 $clp-transition-stroke   // Stroke
@@ -92,11 +92,11 @@ Each utility class
 is made of two parts:
 
 a) first part picks the color according to its key in the map
-```css
+```scss
 .clp03...
 ```
 b) while the second part determines which CSS property will be affected
-```css
+```scss
 ...-clr      // Color
 ...-bg       // Background
 ...-stroke   // Stroke
@@ -114,11 +114,23 @@ For example, to specify color of the text with the first color value and backgro
 
 ++ When assigning values to color themes keep in mind that certain combinations of colors might not  work while others do. More often than not you will find yourself using certain keys for dark or bold colors, while reserving others for light shades.
 
+#### IV. Add custom data attribute
+
+Finally, to use Colored Pages themes add data attribute *"data-clp-theme"* to the body. The value of this attribute should be *clp-theme-* + *index of the theme*.
+
+```html
+<body data-clp-theme="clp-theme-02"> 
+  ...
+</body>
+```
+
 ### Advanced Usage
 
-### I. Use custom CSS
+*Existing functionality that needs to be described.*
 
-### II. Allow users to change themes
+#### I. Use custom CSS
+
+#### II. Allow users to change themes
 
 ## Utility Classes
 

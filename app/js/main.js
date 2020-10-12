@@ -29,7 +29,7 @@ document.querySelectorAll('.clp-index').forEach(function (indicator) {
     })
 
     // Set and save color theme
-    const newTheme = this.getAttribute('clp-select')
+    const newTheme = this.getAttribute('data-clp-select')
     setColorTheme(colorThemes, newTheme)
     saveColorTheme(newTheme)
 

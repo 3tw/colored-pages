@@ -1,14 +1,14 @@
 /* CSS theme variables */
 
 // If theme is not set for the page, return variables with value none
-[clp-theme=""] {
+[data-clp-theme=""] {
   --clp01: none;
   --clp02: none;
   --clp03: none;
   --clp04: none;
 }
 
-[clp-theme="clp-theme-01"] {
+[data-clp-theme="clp-theme-01"] {
   --clp01: #{map-get($clp-theme-01, clp01)};
   --clp02: #{map-get($clp-theme-01, clp02)};
   --clp03: #{map-get($clp-theme-01, clp03)};
@@ -16,7 +16,7 @@
   --clp05: #{map-get($clp-theme-01, clp05)};
 }
 
-[clp-theme="clp-theme-02"] {
+[data-clp-theme="clp-theme-02"] {
   --clp01: #{map-get($clp-theme-02, clp01)};
   --clp02: #{map-get($clp-theme-02, clp02)};
   --clp03: #{map-get($clp-theme-02, clp03)};
@@ -24,7 +24,7 @@
   --clp05: #{map-get($clp-theme-02, clp05)};
 }
 
-[clp-theme="clp-theme-03"] {
+[data-clp-theme="clp-theme-03"] {
   --clp01: #{map-get($clp-theme-03, clp01)};
   --clp02: #{map-get($clp-theme-03, clp02)};
   --clp03: #{map-get($clp-theme-03, clp03)};
@@ -32,7 +32,7 @@
   --clp05: #{map-get($clp-theme-03, clp05)};
 }
 
-[clp-theme="clp-theme-04"] {
+[data-clp-theme="clp-theme-04"] {
   --clp01: #{map-get($clp-theme-04, clp01)};
   --clp02: #{map-get($clp-theme-04, clp02)};
   --clp03: #{map-get($clp-theme-04, clp03)};
@@ -40,7 +40,7 @@
   --clp05: #{map-get($clp-theme-04, clp05)};
 }
 
-[clp-theme="clp-theme-05"] {
+[data-clp-theme="clp-theme-05"] {
   --clp01: #{map-get($clp-theme-05, clp01)};
   --clp02: #{map-get($clp-theme-05, clp02)};
   --clp03: #{map-get($clp-theme-05, clp03)};
@@ -48,7 +48,7 @@
   --clp05: #{map-get($clp-theme-05, clp05)};
 }
 
-[clp-theme="clp-theme-06"] {
+[data-clp-theme="clp-theme-06"] {
   --clp01: #{map-get($clp-theme-06, clp01)};
   --clp02: #{map-get($clp-theme-06, clp02)};
   --clp03: #{map-get($clp-theme-06, clp03)};
