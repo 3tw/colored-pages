@@ -85,7 +85,7 @@ $clp-transition-clr: color 1.5s ease-in;
 
 Each utility class 
 
-```html
+```scss
 .clp03-clr
 ```
 
