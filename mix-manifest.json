@@ -1,6 +1,5 @@
 {
     "/app/css/colored-pages.css": "/app/css/colored-pages.css",
     "/app/src/app.js": "/app/src/app.js",
-    "/dist/index.html": "/dist/index.html",
-    "/dist/favicon.ico": "/dist/favicon.ico"
+    "/dist/index.html": "/dist/index.html"
 }

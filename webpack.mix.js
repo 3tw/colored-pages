@@ -22,4 +22,3 @@ mix
   .copy('app/index.html', 'dist/')
   .copy('app/src/', 'dist/')
   .copy('app/css/', 'dist/')
-  .copy('favicon.ico', 'dist/')

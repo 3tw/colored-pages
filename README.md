@@ -24,8 +24,12 @@ npm install colored-pages
 ```
 
 Import css
-```js
-@import "~colored-pages";
+```scss
+@import "~colored-pages/dist/colored-pages";
+```
+or scss file
+```scss
+@import "~colored-pages/app/scss/colored-pages";
 ```
 
 #### GitHub
@@ -34,7 +38,7 @@ Clone this repository and include js and scss files to your projects
 dist/app.js
 dist/colored-pages.css
 ```
-Make sure to include colored-pages before your custom scss in order to override the defaults.
+Make sure to include colored-pages before your custom scss in order to override the defaults with your own color themes.
 ```html
 <link href="path/to/colored-pages.css" rel="stylesheet">
 <link href="path/to/your-custom-themes.scss" rel="stylesheet">
