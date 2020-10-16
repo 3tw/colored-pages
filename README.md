@@ -27,10 +27,6 @@ Import css
 ```scss
 @import "~colored-pages/dist/colored-pages";
 ```
-or scss file
-```scss
-@import "~colored-pages/app/scss/colored-pages";
-```
 
 #### GitHub
 Clone this repository and include js and scss files to your projects
