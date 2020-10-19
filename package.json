@@ -4,7 +4,7 @@
   "description": "Customizable scss color themes with utility classes.",
   "main": "dist/app.js",
   "scripts": {
-    "test": "jest",
+    "test": "echo \"No test specified\"",
     "clean": "rimraf lib dist app/src",
     "check-js": "standardx",
     "fix-js": "standardx --fix",
