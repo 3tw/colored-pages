@@ -1,7 +1,7 @@
 {
   "name": "colored-pages",
   "version": "0.1.0",
-  "description": "Customizable scss color schemes for the web.",
+  "description": "Customizable scss color themes with utility classes.",
   "main": "dist/app.js",
   "scripts": {
     "test": "jest",
