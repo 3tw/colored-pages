@@ -1,5 +1,6 @@
 {
     "/app/css/colored-pages.css": "/app/css/colored-pages.css",
     "/app/src/app.js": "/app/src/app.js",
-    "/dist/index.html": "/dist/index.html"
+    "/dist/app.js": "/dist/app.js",
+    "/demo/index.html": "/demo/index.html"
 }

@@ -10,15 +10,10 @@ mix.options({
 })
 
 mix
-  .scripts(
-    [
-      'app/js/variables.js',
-      'app/js/functions.js',
-      'app/js/main.js'
-    ],
-    'app/src/app.js'
-  )
+  .scripts(['app/js/variables.js', 'app/js/functions.js', 'app/js/main.js'], 'app/src/app.js')
+  .scripts(['app/js/variables.js', 'app/js/functions.js', 'app/js/main.js'], 'dist/app.js')
   .sass('app/scss/colored-pages.scss', 'app/css/')
-  .copy('app/index.html', 'dist/')
-  .copy('app/src/', 'dist/')
   .copy('app/css/', 'dist/')
+  .copy('app/index.html', 'demo/')
+  .copy('app/src/', 'demo/')
+  .copy('app/css/', 'demo/')
