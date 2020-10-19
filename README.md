@@ -23,7 +23,7 @@ Colored Pages offers easy and flexible use of color themes on your website with 
 npm install colored-pages
 ```
 
-Import css
+Import scss
 ```scss
 @import "~colored-pages/dist/colored-pages";
 ```
@@ -34,16 +34,16 @@ Clone this repository and include js and scss files to your projects
 dist/app.js
 dist/colored-pages.css
 ```
-Make sure to include colored-pages before your custom scss in order to override the defaults with your own color themes.
-```html
-<link href="path/to/colored-pages.css" rel="stylesheet">
-<link href="path/to/your-custom-themes.scss" rel="stylesheet">
+
+Make sure to include colored-pages after your custom scss in order to override the default variables.
+```scss
+@import "path/to/colored-pages";
 ```
 
 ## About
 Colored Pages come with six predefined color themes, each containing five different colors.
 
-You can determine which color theme is used on a webpage or let user switch between them and let Colored Pages do the work.
+You can specify which color theme is used on a webpage or let user switch between them and let Colored Pages do the work.
 
 ## Usage
 
@@ -51,11 +51,11 @@ You can determine which color theme is used on a webpage or let user switch betw
 
 TL;DR
 
-Just define [scss variables](#scss-varaibles) for color themes and color your webpage with [utility classes](#utility-classes) listed below. If you need something more complex write your own stylesheets and include [css variables](#css-variables).
+Just define [scss variables](#scss-variables) for color themes and color your webpage with [utility classes](#utility-classes) listed below. If you need something more complex write your own stylesheets with [css variables](#css-variables).
 
 #### I. Declare color theme(s) variables
 
-Start by defining a scss map of a color theme. Each color theme has its own default values. You can override them by declaring up to 6 maps.
+Start by defining a scss map of a color theme. Each color theme has its own default values. You can override them by declaring up to 6 maps with the following keys:
 
 ```scss
 $clp-theme-01: (
@@ -90,6 +90,14 @@ The variables accept the CSS transition property values. The defaults are:
 $clp-transition-clr: color 1.5s ease-in;
 ```
 
++ Often you will want to disable transitions entirely to avoid flash of default theme. Another way would be disabling transitions for a brief moment with JavaScript by adding and removing a class with a wildcard that disables transitions on page load
+
+```css
+.disable-onload-transitions * {
+  transition: none !important;
+}
+```
+
 #### III. Add utility classes
 
 Each utility class 
@@ -121,11 +129,11 @@ For example, to specify color of the text with the first color value and backgro
 
 [Below](#utility-classes) you can find an extensive list of utility classes used by this version of Colored Pages.
 
-++ When assigning values to color themes keep in mind that certain combinations of colors might not  work while others do. More often than not you will find yourself using certain keys for dark or bold colors, while reserving others for light shades.
++ When assigning values to color themes keep in mind that certain combinations of colors might not  work while others do. More often than not you will find yourself using certain keys for dark or bold colors, while reserving others for light shades.
 
 #### IV. Add custom data attribute
 
-Finally, to use Colored Pages themes add data attribute *"data-clp-theme"* to the body. The value of this attribute should be *clp-theme-* + *index of the theme*.
+Finally, to use Colored Pages themes add data attribute *"data-clp-theme"* to the body. The value of this attribute should be *'clp-theme-'* + *'index of the theme'*.
 
 ```html
 <body data-clp-theme="clp-theme-02"> 
