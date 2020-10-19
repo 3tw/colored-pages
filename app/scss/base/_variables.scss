@@ -50,7 +50,7 @@ $clp-theme-06: (
 
 /* Default transitions */
 
-$clp-transition-clr: color 2s ease-in;
-$clp-transition-bg: background-color 2s ease-in;
-$clp-transition-stroke: stroke 2s ease-in;
-$clp-transition-fill: fill 2s ease-in;
+$clp-transition-clr: color 2s ease-in !default;
+$clp-transition-bg: background-color 2s ease-in !default;
+$clp-transition-stroke: stroke 2s ease-in !default;
+$clp-transition-fill: fill 2s ease-in !default;
