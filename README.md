@@ -14,7 +14,7 @@ Colored Pages offers easy and flexible use of color themes on your website with 
 
 ## Demo
 
-Check out [Colored Pages](https://3tw.github.io/colored-pages/) demo page.
+How does it look? Check out [Colored Pages](https://3tw.github.io/colored-pages/) demo.
 
 ## Installation
 
@@ -55,7 +55,7 @@ Define [scss variables](#scss-variables) for color themes and color your webpage
 
 #### I. Add custom data attribute
 
-Finally, to use Colored Pages themes add data attribute *"data-clp-theme"* to the body. The value of this attribute should be *'clp-theme-'* + *'index of the theme'*.
+First of all, to use Colored Pages themes add data attribute *"data-clp-theme"* to the body. The value of this attribute should be *'clp-theme-'* + *'index of the theme'*.
 
 ```html
 <body data-clp-theme="clp-theme-02"> 
@@ -65,7 +65,7 @@ Finally, to use Colored Pages themes add data attribute *"data-clp-theme"* to th
 
 #### II. Declare color theme(s) variables
 
-Start by defining a scss map of a color theme. Each color theme has its own default values. You can override them by declaring up to 6 maps with the following keys:
+Continue by defining a scss map of a color theme. Each color theme has its own default values. You can override them by declaring up to 6 maps with the following keys:
 
 ```scss
 $clp-theme-01: (
