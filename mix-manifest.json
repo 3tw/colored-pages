@@ -1,6 +1,6 @@
 {
     "/app/css/colored-pages.css": "/app/css/colored-pages.css",
-    "/app/src/app.js": "/app/src/app.js",
-    "/dist/app.js": "/dist/app.js",
+    "/app/src/colored-pages.min.js": "/app/src/colored-pages.min.js",
+    "/dist/colored-pages.min.js": "/dist/colored-pages.min.js",
     "/demo/index.html": "/demo/index.html"
 }

@@ -23,22 +23,32 @@ How does it look? Check out [Colored Pages](https://3tw.github.io/colored-pages/
 npm install colored-pages
 ```
 
-Import scss
+Import 
+
+scss
 ```scss
-@import "~colored-pages/dist/colored-pages";
+@import "~colored-pages/dist/colored-pages"
+```
+
+copy and include js
+```html
+<script src="/path/to/colored-pages.min.js"></script>
 ```
 
 #### GitHub
-Clone this repository and include js and scss files to your projects
-```bash
-dist/app.js
-dist/colored-pages.css
+Clone this repository and import
+
+scss
+```scss
+@import "path/to/colored-pages"
 ```
 
-Make sure to include colored-pages after your custom scss in order to override the default variables.
-```scss
-@import "path/to/colored-pages";
+and js
+```html
+<script src="/path/to/colored-pages.min.js"></script>
 ```
+
+> Make sure to include colored-pages after your custom scss in order to override the default variables.
 
 ## About
 Colored Pages come with six predefined color themes, each containing five different colors.
@@ -100,7 +110,7 @@ The variables accept the CSS transition property values. The defaults are:
 $clp-transition-clr: color 1.5s ease-in;
 ```
 
-++ Often you will want to disable transitions entirely to avoid flash of default theme. Another way would be disabling transitions for a brief moment with JavaScript by adding and removing a class with a wildcard that disables transitions on page load
+> Often you will want to disable transitions entirely to avoid flash of default theme. Another way would be disabling transitions for a brief moment with JavaScript by adding and removing a class with a wildcard that disables transitions on page load
 
 ```css
 .disable-onload-transitions * {
@@ -139,7 +149,7 @@ For example, to specify color of the text with the first color value and backgro
 
 Below you can find an extensive list of [utility classes](#utility-classes) used by this version of Colored Pages.
 
-++ When assigning values to color themes keep in mind that certain combinations of colors might not  work while others do. More often than not you will find yourself using certain keys for dark or bold colors, while reserving others for light shades.
+> When assigning values to color themes keep in mind that certain combinations of colors might not  work while others do. More often than not you will find yourself using certain keys for dark or bold colors, while reserving others for light shades.
 
 ### Advanced Usage
 
