@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Customizable scss color themes with utility classes.",
   "main": "dist/app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/3tw/colored-pages.git"
+  },
   "scripts": {
     "test": "echo \"No test specified\"",
     "clean": "rimraf lib dist app/src",

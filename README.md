@@ -14,7 +14,7 @@ Colored Pages offers easy and flexible use of color themes on your website with 
 
 ## Demo
 
-[Colored Pages](https://3tw.github.io/colored-pages/)
+Check out [Colored Pages](https://3tw.github.io/colored-pages/) demo page.
 
 ## Installation
 
@@ -51,9 +51,19 @@ You can specify which color theme is used on a webpage or let user switch betwee
 
 TL;DR
 
-Just define [scss variables](#scss-variables) for color themes and color your webpage with [utility classes](#utility-classes) listed below. If you need something more complex write your own stylesheets with [css variables](#css-variables).
+Define [scss variables](#scss-variables) for color themes and color your webpage with [utility classes](#utility-classes) listed below. If you need something more complex write your own stylesheets with [css variables](#css-variables).
 
-#### I. Declare color theme(s) variables
+#### I. Add custom data attribute
+
+Finally, to use Colored Pages themes add data attribute *"data-clp-theme"* to the body. The value of this attribute should be *'clp-theme-'* + *'index of the theme'*.
+
+```html
+<body data-clp-theme="clp-theme-02"> 
+  ...
+</body>
+```
+
+#### II. Declare color theme(s) variables
 
 Start by defining a scss map of a color theme. Each color theme has its own default values. You can override them by declaring up to 6 maps with the following keys:
 
@@ -73,7 +83,7 @@ The keys (*clp01*, *clp02*, ... *clp05*) must remain the same too.
 
 **Only color values can change.**
 
-#### II. Declare transition variables (optional)
+#### III. Declare transition variables (optional)
 
 There are four transitions for you to customise that control the color change on specific CSS properties.
 
@@ -90,7 +100,7 @@ The variables accept the CSS transition property values. The defaults are:
 $clp-transition-clr: color 1.5s ease-in;
 ```
 
-+ Often you will want to disable transitions entirely to avoid flash of default theme. Another way would be disabling transitions for a brief moment with JavaScript by adding and removing a class with a wildcard that disables transitions on page load
+++ Often you will want to disable transitions entirely to avoid flash of default theme. Another way would be disabling transitions for a brief moment with JavaScript by adding and removing a class with a wildcard that disables transitions on page load
 
 ```css
 .disable-onload-transitions * {
@@ -98,7 +108,7 @@ $clp-transition-clr: color 1.5s ease-in;
 }
 ```
 
-#### III. Add utility classes
+#### IV. Add utility classes
 
 Each utility class 
 
@@ -127,23 +137,13 @@ For example, to specify color of the text with the first color value and backgro
 </p>
 ```
 
-[Below](#utility-classes) you can find an extensive list of utility classes used by this version of Colored Pages.
+Below you can find an extensive list of [utility classes](#utility-classes) used by this version of Colored Pages.
 
-+ When assigning values to color themes keep in mind that certain combinations of colors might not  work while others do. More often than not you will find yourself using certain keys for dark or bold colors, while reserving others for light shades.
-
-#### IV. Add custom data attribute
-
-Finally, to use Colored Pages themes add data attribute *"data-clp-theme"* to the body. The value of this attribute should be *'clp-theme-'* + *'index of the theme'*.
-
-```html
-<body data-clp-theme="clp-theme-02"> 
-  ...
-</body>
-```
+++ When assigning values to color themes keep in mind that certain combinations of colors might not  work while others do. More often than not you will find yourself using certain keys for dark or bold colors, while reserving others for light shades.
 
 ### Advanced Usage
 
-*Existing functionality that needs to be described.*
+*Existing functionality that needs to be described. Have a look at demo page.*
 
 #### I. Use custom CSS
 
