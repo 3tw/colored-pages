@@ -1,6 +1,6 @@
 {
   "name": "colored-pages",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Customizable scss color themes with utility classes.",
   "main": "dist/app.js",
   "repository": {
