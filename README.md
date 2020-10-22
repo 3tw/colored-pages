@@ -1,8 +1,9 @@
 # Colored Pages
 
-Colored Pages offers easy and flexible use of color themes on your website with utiliy classes as well as your own custom CSS.
+Colored Pages offer easy and flexible use of color themes on your website with utiliy classes as well as your own custom CSS.
 
-(WIP)
+They come with six predefined color themes, each containing five different colors.
+You can specify which color theme is used on a webpage or let user switch between them and let Colored Pages do the work.
 
 ## Table of Contents
 * [Demo](#demo)  
@@ -30,30 +31,27 @@ SCSS
 @import "~colored-pages/dist/colored-pages"
 ```
 
-copy and include js
+copy and include JS
 ```html
 <script src="/path/to/colored-pages.min.js"></script>
 ```
 
 #### GitHub
-Clone this repository and import
+Clone this repository.
+
+Import
 
 SCSS
 ```scss
 @import "path/to/colored-pages"
 ```
 
-and js
+and include JS
 ```html
 <script src="/path/to/colored-pages.min.js"></script>
 ```
 
 > Make sure to include colored-pages after your custom SCSS in order to override the default variables.
-
-## About
-Colored Pages come with six predefined color themes, each containing five different colors.
-
-You can specify which color theme is used on a webpage or let user switch between them and let Colored Pages do the work.
 
 ## Usage
 
