@@ -20,6 +20,8 @@ How does it look? Check out [Colored Pages](https://3tw.github.io/colored-pages/
 ## Installation
 
 #### NPM
+Install package via npm
+
 ```bash
 npm install colored-pages
 ```
@@ -27,26 +29,30 @@ npm install colored-pages
 Import 
 
 SCSS
+
 ```scss
 @import "~colored-pages/dist/colored-pages"
 ```
 
 copy and include JS
+
 ```html
 <script src="/path/to/colored-pages.min.js"></script>
 ```
 
 #### GitHub
-Clone this repository.
+Clone [this repository](https://github.com/3tw/colored-pages).
 
 Import
 
 SCSS
+
 ```scss
 @import "path/to/colored-pages"
 ```
 
 and include JS
+
 ```html
 <script src="/path/to/colored-pages.min.js"></script>
 ```
@@ -59,7 +65,7 @@ and include JS
 
 TL;DR
 
-Define [SCSS variables](#scss-variables) for color themes and color your webpage with [utility classes](#utility-classes) listed below. If you need something more complex write your own stylesheets with [css variables](#css-variables).
+Define [SCSS variables](#scss-variables) for color themes and color your webpage with [utility classes](#utility-classes) listed below. If you need something more complex write your own stylesheets with [CSS variables](#css-variables).
 
 #### I. Add custom data attribute
 
@@ -124,15 +130,21 @@ Each utility class
 
 ```scss
 .clp03-clr
+.clp01-bg 
+.clp02-stroke
+...
 ```
 
 is made of two parts:
 
-a) first part picks the color according to its key in the map
+a) first part tells us which color from the theme is used
+
 ```scss
 .clp03...
 ```
+
 b) while the second part determines which CSS property will be affected
+
 ```scss
 ...-clr      // Color
 ...-bg       // Background
@@ -141,32 +153,138 @@ b) while the second part determines which CSS property will be affected
 ```
 
 For example, to specify color of the text with the first color value and background of the element with the third, you would write down
+
 ```html
 <p class="clp01-clr clp03-bg"> 
   Colored Pages made me this way. 
 </p>
 ```
 
-Below you can find an extensive list of [utility classes](#utility-classes) used by this version of Colored Pages.
-
 > When assigning values to color themes keep in mind that certain combinations of colors might not  work while others do. More often than not you will find yourself using certain keys for dark or bold colors, while reserving others for light shades.
 
 ### Advanced Usage
 
-*Existing functionality that needs to be described. Have a look at demo page.*
+#### I. Use custom CSS/SCSS
 
-#### I. Use custom CSS
+Whenever utility classes can't be used (for example, WYSIWYG fields), you can apply you custom styles by using Colored Pages [CSS variables](#css-variables).
+
+```scss
+.my-container {
+  background-color: var(--clp01);
+  .container-content {
+    color: var(--clp03);
+    border-color: var(--clp03);
+    .icon {
+      color: var(--clp05);
+    }
+  }
+}
+```
 
 #### II. Allow users to change themes
 
+Colored Pages come with theme indexes/switches that allow the user to navigate between color themes. 
+Each theme has a dedicated data attribute. Add it to the element to initialize it as an indicator. That is it! (And don't forget to include JS file that makes all of this possible.)
+
+```html
+<span data-clp-select="clp-theme-01">Try this theme</span>
+<span data-clp-select="clp-theme-02">or this one</span>
+<span data-clp-select="clp-theme-03">or the third</span>
+<span data-clp-select="clp-theme-04">and fourth</span>
+<span data-clp-select="clp-theme-05">perhaps number 5?</span>
+```
+
+Optionally, you can add *clp-index* class to get Colored Pages styled index (used in the Demo)
+
+```html
+<span data-clp-select="clp-theme-05" class="clp-index"></span>
+```
+
+> Selected color theme is saved in local storage.
+
 ## Utility Classes
+
+| Class | Description |
+| --- | --- |
+| .clp01-clr | color property value set to first color of the current theme |
+| .clp01-bg | background-color property value set to first color of the current theme |
+| .clp01-stroke | stroke property value set to first color of the current theme |
+| .clp01-fill | fill property value set to first color of the current theme |
+
+> Of course you can chose second, third, fourth and fifth color of the current theme by using *clp02-...*, *clp03-...*, *clp04-...* and *clp05-...* respectively.
 
 ## Variables
 
-### SCSS Variables
-
 ### CSS Variables
 
+Colored pages use only 5 CSS variables. They are the backbone of Colored Pages.
+
+| Variable | Description |
+| --- | --- |
+| var(--clp01) | First color in the theme |
+| var(--clp02) | Second color in the theme |
+| var(--clp03) | Third color in the theme |
+| var(--clp04) | Fourth color in the theme |
+| var(--clp05) | Fifth color in the theme |
+
+### SCSS Variables
+
+Extensive list of default SCSS variables.
+
+```scss
+$clp-theme-01: (
+  clp01: #c6493a,
+  clp02: #edf5e1,
+  clp03: #5cdb95,
+  clp04: #907163,
+  clp05: #111111,
+) !default;
+
+$clp-theme-02: (
+  clp01: #081c15,
+  clp02: #2d6a4f,
+  clp03: #29c376,
+  clp04: #b7e4c7,
+  clp05: #d8f3dc,
+) !default;
+
+$clp-theme-03: (
+  clp01: #522e38,
+  clp02: #b9375e,
+  clp03: #f3628e,
+  clp04: #da7392,
+  clp05: #ffe0e9,
+) !default;
+
+$clp-theme-04: (
+  clp01: #05668d,
+  clp02: #028090,
+  clp03: #00a896,
+  clp04: #02c39a,
+  clp05: #f0f3bd,
+) !default;
+
+$clp-theme-05: (
+  clp01: #220901,
+  clp02: #621708,
+  clp03: #941b0c,
+  clp04: #bc3908,
+  clp05: #f6aa1c,
+) !default;
+
+$clp-theme-06: (
+  clp01: #ffffff,
+  clp02: #e9ecef,
+  clp03: #848687,
+  clp04: #495057,
+  clp05: #212529,
+) !default;
+
+$clp-transition-clr: color 2s ease-in !default;
+$clp-transition-bg: background-color 2s ease-in !default;
+$clp-transition-stroke: stroke 2s ease-in !default;
+$clp-transition-fill: fill 2s ease-in !default;
+```
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
